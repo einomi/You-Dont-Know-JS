@@ -736,7 +736,7 @@ Some would argue that this is unreasonable behavior, and that `parseInt(..)` sho
 Should it return `NaN`? Maybe. But... what about:
 
 ```js
-parseInt( new String( "42") );
+parseInt( new String( "42" ) );
 ```
 
 Should that fail, too? It's a non-`string` value. If you want that `String` object wrapper to be unboxed to `"42"`, then is it really so unusual for `42` to first become `"42"` so that `42` can be parsed back out?
